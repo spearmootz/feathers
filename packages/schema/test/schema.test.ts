@@ -7,7 +7,7 @@ import addFormats from 'ajv-formats'
 const customAjv = new Ajv({
   coerceTypes: true
 })
-addFormats(customAjv)
+addFormats(customAjv as any)
 
 // Utility for converting "date" and "date-time" string formats into Dates.
 customAjv.addKeyword({
